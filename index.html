@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body,html{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            height:100vh;
+            width: 100%;
+        }
+        body{
+            height: 100vh;
+        }
+        .cont{
+            height:100%;
+            background-color:pink;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box{
+            background-color: blue;
+            text-align: center;
+            padding: 100px 100px;
+            border-radius:20px;
+            border: 5px solid black;
+        }
+        .box:hover{
+            transform:scale(1.05);
+        }
+        #profile{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+
+        }
+        button{
+            background-color: greenyellow;
+            color:black;
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            border: 2px solid black;
+
+        }
+        button:hover{
+            transform:scale(1.03);
+        }
+        h2{
+            color: whitesmoke;
+            font-size: 200%;
+        }
+        #l,#g,#x{
+            border-radius: 50% ;
+            border: 2px solid black;
+        }
+        #l:hover,#g:hover,#x:hover{
+            transform: scale(1.1);
+        }
+        .logo{
+            gap: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+            <h2>Jay Shree</h2>
+            <img src="images/PHOTO.jpg" height="100"alt="profile pic" id="profile"><br><br><br>
+            <button>View Protfolio</button>
+            <a href="projects.html">
+                <button>major project</button>
+            </a><br><br>
+
+            <div class="logo">
+                <img src="images/link.png" height="48" width="48"alt="linkdin" id="l">
+                <img src="images/github.jpg" height="48" width="48" alt="github" id="g">
+                <img src="images/x.png" height="48" width="48" alt="X" id="x">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
